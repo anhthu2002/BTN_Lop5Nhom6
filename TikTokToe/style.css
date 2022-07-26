@@ -1,31 +1,29 @@
-.container{
-    position: absolute;
-    width: 1315px;
-    height: 1303px;
-    margin: auto;
-    background-color: #FFE79E;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: auto;
 }
 
-.gameBoard{
-    display:flex;
-    flex-direction: column;
-    align-items: stretch;
+:root {
+  --color-boder: #ffe79e;
 }
 
-.btn{
-    flex-grow: 1;
-    margin: 24px;
-    width:400px;
-    height:400px;
-    left: 33px;
-    top: 28px;
+#app {
+  height: 100vh;
+  display: flex;
+    position: relative;
 }
-.controls{
-    text-align: center;
+
+#scores_wraper {
+  width: 300px;
+  height: 100%;
+  box-shadow: 1px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
-.xbtn{
-    color:rgba(44, 141, 255, 1)
-}
-.obtn{
-    color:rgba(255, 79, 79, 1)
+
+#scores_title {
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: underline;
 }
