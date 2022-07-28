@@ -39,19 +39,22 @@ const handleResetGame = () => {
 const handleYouWinOrNot = (player = "", indexChoose) => {
   switch (indexChoose) {
     case 0: {
+      // trường hợp win theo đường ngang
       if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose + 1].classList.value.search(player) !== -1 &&
         boxs[indexChoose + 2].classList.value.search(player) !== -1
       ) {
         return player;
-        
+
+        // win theo chiều dọc
       } else if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose + 3].classList.value.search(player) !== -1 &&
         boxs[indexChoose + 6].classList.value.search(player) !== -1
       ) {
         return player;
+        // win theo đường chéo
       } else if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose + 4].classList.value.search(player) !== -1 &&
@@ -62,6 +65,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       break;
     }
     case 1: {
+      // win theo hàng ngang
       if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose - 1].classList.value.search(player) !== -1 &&
@@ -69,6 +73,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       ) {
         return player;
       }
+      //win theo hàng dọc
       else if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose + 3].classList.value.search(player) !== -1 &&
@@ -79,6 +84,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       break;
     }
     case 2: {
+      // win theo hàng ngang
       if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose - 1].classList.value.search(player) !== -1 &&
@@ -86,6 +92,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       ) {
         return player;
       }
+      //win theo hàng dọc
       else if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose + 3].classList.value.search(player) !== -1 &&
@@ -93,6 +100,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       ) {
         return player;
       }
+      // win theo đường chéo
       else if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose + 2].classList.value.search(player) !== -1 &&
@@ -121,6 +129,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       break;
     }
     case 4: {
+      // win theo hàng ngang
       if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose - 1].classList.value.search(player) !== -1 &&
@@ -128,6 +137,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       ) {
         return player;
       }
+      // win theo hàng dọc
       else if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose - 3].classList.value.search(player) !== -1 &&
@@ -135,6 +145,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       ) {
         return player;
       }
+      // win theo đường chéo bên trái
       else if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose - 4].classList.value.search(player) !== -1 &&
@@ -142,6 +153,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       ) {
         return player;
       }
+      // win theo đường chéo bên phải
       else if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose - 2].classList.value.search(player) !== -1 &&
@@ -152,6 +164,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       break;
     }
     case 5: {
+      // win theo hàng ngang
       if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose - 1].classList.value.search(player) !== -1 &&
@@ -159,6 +172,7 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
       ) {
         return player;
       }
+      //win theo hàng dọc
       else if (
         boxs[indexChoose].classList.value.search(player) !== -1 &&
         boxs[indexChoose - 3].classList.value.search(player) !== -1 &&
@@ -169,3 +183,109 @@ const handleYouWinOrNot = (player = "", indexChoose) => {
 
       break;
     }
+    case 6: {
+      // win theo hàng ngang
+      if (
+        boxs[indexChoose].classList.value.search(player) !== -1 &&
+        boxs[indexChoose + 1].classList.value.search(player) !== -1 &&
+        boxs[indexChoose + 2].classList.value.search(player) !== -1
+      ) {
+        return player;
+      }
+      // win theo hàng dọc
+      else if (
+        boxs[indexChoose].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 3].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 6].classList.value.search(player) !== -1
+      ) {
+        return player;
+      }
+      // win theo đường chéo
+      else if (
+        boxs[indexChoose].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 2].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 4].classList.value.search(player) !== -1
+      ) {
+        return player;
+      }
+      break;
+    }
+    case 7: {
+      // win theo hàng ngang
+      if (
+        boxs[indexChoose].classList.value.search(player) !== -1 &&
+        boxs[indexChoose + 1].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 1].classList.value.search(player) !== -1
+      ) {
+        return player;
+      }
+      // win theo hàng dọc
+      else if (
+        boxs[indexChoose].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 3].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 6].classList.value.search(player) !== -1
+      ) {
+        return player;
+      }
+      break;
+    }
+    case 8: {
+      // win theo hàng ngang
+      if (
+        boxs[indexChoose].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 1].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 2].classList.value.search(player) !== -1
+      ) {
+        return player;
+      }
+      // win theo hàng dọc
+      else if (
+        boxs[indexChoose].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 3].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 6].classList.value.search(player) !== -1
+      ) {
+        return player;
+      }
+      // win theo đường chéo
+      else if (
+        boxs[indexChoose].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 4].classList.value.search(player) !== -1 &&
+        boxs[indexChoose - 8].classList.value.search(player) !== -1
+      ) {
+        return player;
+      }
+      break;
+    }
+
+    default: {
+      break;
+    }
+  }
+  return "";
+const handleCheckWin = () => {
+  const blue_scoreTemp = +blue_score.textContent;
+  const red_scoreTemp = +red_score.textContent;
+  const pointWin = Number.parseInt(point / 2 + 1);
+  if (pagination_item === point) {
+    console.log("Vao");
+    if (blue_scoreTemp > red_scoreTemp) {
+      alert("X đã chiến thắng chung cuộc");
+      window.location.reload();
+    } else if (red_scoreTemp > blue_scoreTemp) {
+      alert("O đã chiến thắng chung cuộc");
+      window.location.reload();
+    } else {
+      alert("Hai bạn đã hòa nhau");
+      window.location.reload();
+    }
+  } else {
+    if (blue_scoreTemp === pointWin) {
+      alert("X đã chiến thắng chung cuộc");
+      window.location.reload();
+    } else if (red_scoreTemp === pointWin) {
+      alert("O đã chiến thắng chung cuộc");
+      window.location.reload();
+    }
+  }
+  console.log("handleCheckWin", pagination_item);
+};
