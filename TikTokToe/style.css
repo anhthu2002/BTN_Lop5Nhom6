@@ -203,3 +203,44 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.3);
   }
+#overlay_main {
+    width: 450px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #overlay_title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+    color: crimson;
+  }
+  
+  #player_win {
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 18px;
+  }
+  
+  #btn_complete {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  #btn_complete > span {
+    background-color: rgba(0, 128, 0, 0.7);
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  #btn_complete > span:hover {
+    background-color: rgba(0, 128, 0, 0.9);
+  }
