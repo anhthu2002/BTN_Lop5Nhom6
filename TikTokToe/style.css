@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: auto;
+}
+
+:root {
+  --color-boder: #ffe79e;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  position: relative;
+}
+
+#scores_wraper {
+  width: 300px;
+  height: 100%;
+  box-shadow: 1px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+#scores_title {
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: underline;
+}
